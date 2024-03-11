@@ -2,7 +2,6 @@ namespace IFCE.Chaves.Domain.Entities;
 
 public class Chave : Entity
 {
-    
     protected Chave()
     {
         
@@ -20,7 +19,7 @@ public class Chave : Entity
     
     
     public long Numero { get; private set; }
-    public Sala Sala  { get; private set; }
+    public Sala Sala { get; private set; }
     public bool isDisponivel { get; private set; }
     public string color { get; private set; } //verde ou vermelho
     
@@ -37,9 +36,4 @@ public class Chave : Entity
         isDisponivel = true;
         color = "green";
     }
-    
-    
-    
-    
-    
 }
